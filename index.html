@@ -6,18 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vanila_js | lang_translator</title>
     <style>
+
+        body{
+            background-image:url("https://c1.wallpaperflare.com/preview/515/486/434/minions-funny-double-banana.jpg");
+            
+        }
+
         button{
-            background-color: aqua;
-            margin:auto;
+            background-color:rgba(245, 202, 9, 0.966);
+            margin:auto; 
+            /* margin-left: 5rem; */
             display: block;
+            border:solid;
+            padding:.4rem 1.2rem;
+            color:rgb(139, 137, 137);
+            border-radius: .8rem;
+            font-size: 1.2rem;
+            font-weight: bolder;
+            
+
         }
 
         textarea{
             
             padding:1rem;
-            margin:2rem;
+            display:inline-block;
+            /* margin:auto; */
             width: 25rem;
+            background: transparent;
+            color:green;
+            font-weight: bolder;
+            font-size: 1rem;
         }
+
+
+        h1{
+            color:silver;
+            text-align: center;
+        }
+        
+        
+        h2{
+            color:silver;
+            text-align: center;
+        }
+
+        .footer{
+            margin-top: 15rem;
+            color:rgb(221, 205, 205);
+            font-weight: bolder;
+            
+        }
+
 
         
     </style>
@@ -25,14 +65,33 @@
 <body>
     
     <h1 style="text-align:center ;">Welcome to language transaltor!</h1>
-    <h2>Hi! Enter your text below in English and it will be converted to minion language</h2>
+    <h2> Enter your text below in English and it will be translated to minion language.</h2>
+    
+    
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+    <textarea placeholder=" Enter the sentence in english you wanna convert into minion language" id="txt-input"></textarea>
+    
+
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+
+    <textarea id="txt-output" placeholder="Your translated text will appear here !!!"></textarea>
+
     <button id="btn-translate">Translate</button>
-    
-   
 
-    <textarea placeholder="Hi Enter the sentence in english you wanna convert into minion language" id="txt-input"></textarea>
-    
-
+    <div class="footer">
+        
+        <h3>&nbsp; &nbsp; &nbsp; &nbsp; Facts About Minion </h3>
+        <ul>
+        <li>Minions can survive in outer space. 
+            </li>
+        <li>All the Minions who play significant roles in the films have male names.
+            </li>
+        <li>The Minion language is called Minionese. 
+            </li>
+        <li>The evil Minions are purple because purple and yellow are on opposite sides of the colour spectrum.</li>
+    </ul> </div>
 
 <script src="app.js" type="text/javascript"></script>
 
