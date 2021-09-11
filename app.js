@@ -15,7 +15,7 @@ function encoder(){
 
 
 function errorHandler(error){
-alert("Hey, It seems that currently the server is down please try after some time" +"\nError : " + error)
+alert("Hey, It seems that currently the server is down Please check your Internet connection and try after some time" +"\nError : " + error)
     return error
 }
 
