@@ -15,7 +15,7 @@ function encoder(){
 
 
 function errorHandler(error){
-alert("Hey, It seems that currently the server is down Please check your Internet connection and try after some time" +"\nError : " + error)
+alert("Hey, It seems that currently the server is down !! Please check your Internet connection and try after some time" +"\n" + error)
     return error
 }
 
@@ -25,7 +25,7 @@ function clickHandler() {
         fetch(encoder())
         .then(response => response.json())
         .then(json => txtOutput.innerText = json.contents.translated)
-        .catch(errorHandler())
+        .catch(errorHandler)
     
 }
 
