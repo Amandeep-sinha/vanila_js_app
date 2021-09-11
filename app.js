@@ -14,6 +14,10 @@ function encoder(){
 }
 
 
+function errorHandler(error){
+alert("Hey, It seems that currently the server is down please try after some time" +"\nError : " + error)
+    return error
+}
 
 
 function clickHandler() {
@@ -21,6 +25,7 @@ function clickHandler() {
         fetch(encoder())
         .then(response => response.json())
         .then(json => txtOutput.innerText = json.contents.translated)
+        .catch(errorHandler())
     
 }
 
