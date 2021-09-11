@@ -8,10 +8,25 @@ var txtOutput = document.querySelector("#txt-output");
 // })
 // //console.log(btnTranslate);
 
-function clickHandler(){
-    console.log("you enterd " + txtInput.value )
-    txtOutput.innerText= ("You Entered !! "+txtInput.value);
+function encoder(){
+    var url="https://api.funtranslations.com/translate/minion.json" + "?" + "text=" + txtInput.value
+    return url
+}
+
+
+
+
+function clickHandler() {
+    //encoder()
+        fetch(encoder())
+        .then(response => response.json())
+        .then(json => txtOutput.innerText = json.contents.translated)
+    
 }
 
 btnTranslate.addEventListener("click", clickHandler);
 
+
+
+// console.log("you enterd " + txtInput.value)
+//     txtOutput.innerText = ("You Entered !! " + txtInput.value);
